@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study MBBS Abroad | Global Medical Education</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        :root {
+            --primary-blue: #0F3D5E;
+            --accent-gold: #FFD700;
+            --light-bg: #F8F9FA;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(15, 61, 94, 0.8), rgba(15, 61, 94, 0.8)),
+                        url('https://images.unsplash.com/photo-1581093458799-1a5ca3b611a0') center/cover;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            padding: 0 2rem;
+            color: white;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            background-color: var(--accent-gold);
+            color: var(--primary-blue);
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: transform 0.3s;
+        }
+
+        /* Benefits Section */
+        .benefits {
+            padding: 5rem 2rem;
+            background-color: var(--light-bg);
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+            color: var(--primary-blue);
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .benefit-card {
+            text-align: center;
+            padding: 2rem;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .benefit-icon {
+            font-size: 2.5rem;
+            color: var(--primary-blue);
+            margin-bottom: 1rem;
+        }
+
+        /* Countries Section */
+        .countries {
+            padding: 5rem 2rem;
+        }
+
+        .country-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1.5rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .country-card {
+            text-align: center;
+            padding: 1rem;
+            border: 2px solid var(--primary-blue);
+            border-radius: 8px;
+            transition: all 0.3s;
+        }
+
+        /* Admission Process */
+        .admission-process {
+            padding: 5rem 2rem;
+            background-color: var(--light-bg);
+        }
+
+        .process-steps {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+            flex-wrap: wrap;
+        }
+
+        .process-step {
+            flex: 1;
+            min-width: 250px;
+            text-align: center;
+            padding: 2rem;
+            position: relative;
+        }
+
+        .step-number {
+            width: 40px;
+            height: 40px;
+            background: var(--accent-gold);
+            color: var(--primary-blue);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            font-weight: 700;
+        }
+
+        /* Contact Form */
+        .contact-form {
+            padding: 5rem 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 0.8rem;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .process-steps {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Study MBBS Abroad with Global Experts</h1>
+            <p class="hero-subtitle">Start your international medical career at world-class universities</p>
+            <a href="#contact" class="cta-button">Apply Now</a>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits">
+        <h2 class="section-title">Why Choose Us?</h2>
+        <div class="benefits-grid">
+            <div class="benefit-card">
+                <i class="fas fa-graduation-cap benefit-icon"></i>
+                <h3>Globally Recognized Degrees</h3>
+                <p>WHO & MCI approved universities with international accreditation</p>
+            </div>
+            <!-- Add more benefit cards -->
+        </div>
+    </section>
+
+    <!-- Top Countries Section -->
+    <section class="countries">
+        <h2 class="section-title">Popular Destinations</h2>
+        <div class="country-grid">
+            <div class="country-card">Russia</div>
+            <div class="country-card">Uzbekistan</div>
+            <!-- Add other countries -->
+        </div>
+    </section>
+
+    <!-- Admission Process -->
+    <section class="admission-process">
+        <h2 class="section-title">Simple 4-Step Process</h2>
+        <div class="process-steps">
+            <div class="process-step">
+                <div class="step-number">1</div>
+                <h3>Choose Your Country</h3>
+                <p>Select from our top recommended destinations</p>
+            </div>
+            <!-- Add more steps -->
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact-form" id="contact">
+        <h2 class="section-title">Start Your Journey</h2>
+        <form>
+            <div class="form-grid">
+                <input type="text" class="form-input" placeholder="Full Name" required>
+                <input type="email" class="form-input" placeholder="Email Address" required>
+                <input type="tel" class="form-input" placeholder="Phone Number" required>
+                <select class="form-input" required>
+                    <option value="">Preferred Country</option>
+                    <!-- Add country options -->
+                </select>
+            </div>
+            <button type="submit" class="cta-button">Submit Application</button>
+        </form>
+    </section>
+</body>
+</html>
